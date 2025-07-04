@@ -1,0 +1,52 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Dependency directories
+node_modules/
+package-lock.json
+
+# Optional npm cache directory
+.npm
+
+# Output of 'npm pack'
+*.tgz
+
+# dotenv environment variables
+config.env
+.env
+.env.*.local
+
+# Build directories
+dist/
+build/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# VS Code
+.vscode/
+
+# Optional IDE configs
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Mac system files
+.DS_Store
+
+# Coverage directory
+coverage/
+
+# Optional: Ignore test results
+test-output/
