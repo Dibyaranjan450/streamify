@@ -3,6 +3,7 @@ import serverless from "serverless-http";
 import dotenv from "dotenv";
 import createHttpError from "http-errors";
 import cookieParser from "cookie-parser";
+import cors from "cors";
 
 import globalErrorHandler from "../utils/globalErrorHandler.js";
 import authRouter from "../routes/auth.route.js";
@@ -15,6 +16,7 @@ dotenv.config();
 // Middlewares //
 app.use(express.json());
 app.use(cookieParser());
+app.use(cors({ origin: "http://localhost:5173", credentials: true }));
 
 // Routes //
 app.use("/api/v1/auth", authRouter);
